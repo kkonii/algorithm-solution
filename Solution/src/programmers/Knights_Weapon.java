@@ -5,21 +5,17 @@ public class Knights_Weapon {
         
         int sum = 0;         //공격력 수치
         
-        int divisor = 0;        //약수의 갯수 변수
-        
         for(int i=1;i<=number;i++){
-            for(int j=1;j<=number;j++){
-                if(number % j == 0) {
-                    if(Math.floor(number/j) != 1){
-                        divisor++;
-                    }else {
-                        continue;
-                    }
-                }
+            int divisor = 0;        //약수의 갯수 변수
+            
+            for(int j=1;j*j<=i;j++){
+                if(i % j == 0){
+                    if(i / j == j) divisor++;
+                    else divisor+=2;
+                } 
             }
             
-            if(divisor > limit) sum += power;
-            if(divisor <= limit) sum += divisor;
+            sum = divisor <= limit ? sum + divisor : sum + power;
         }
         
         return sum;
