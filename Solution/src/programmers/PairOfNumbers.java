@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.*;
 
-public class NumbersPair {
+public class PairOfNumbers {
     public String solution(String X, String Y) {
         String answer = "";
         
