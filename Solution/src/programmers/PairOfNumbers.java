@@ -4,7 +4,7 @@ import java.util.*;
 
 public class PairOfNumbers {
     public String solution(String X, String Y) {
-        String answer = "";
+    	StringBuffer answerBfr = new StringBuffer();
         
         char[] arrX = X.toCharArray();
 		char[] arrY = Y.toCharArray();
@@ -26,9 +26,11 @@ public class PairOfNumbers {
 		
 		Arrays.sort(answerArr.toArray());
 		
-		for(int i=answerArr.size()-1;i>=0;i--) answer+=answerArr.get(i);
+		for(int i=answerArr.size()-1;i>=0;i--) answerBfr.append(answerArr.get(i));
         
-		if(answer == "") answer = "-1";
+		String answer = answerBfr.toString();
+		
+		if(answer.equals("")) answer = "-1";
         if(answer.charAt(0) == '0' && answer.charAt(answer.length()-1) == '0') answer = "0";
         
         return answer;
