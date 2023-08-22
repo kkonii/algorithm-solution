@@ -1,27 +1,39 @@
 package programmers;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class RunningRace {
     public String[] solution(String[] players, String[] callings) {
-		 String[] answer = {};
+		 String[] answer = new String[players.length];
+	        
+		 Map<String, Integer> byRunner = new HashMap<>();
+		 Map<Integer, String> byRank= new HashMap<>();
 		 
-		 List<String> players_list = new ArrayList<>(Arrays.asList(players));
-		 
-		 changeRank(callings, players_list);
-		 
-		 return players_list.toArray(answer);
-		 
-	 }
-	 
-	 private static void changeRank(String[] callings, List<String> players_list) {
-		 for(int i=0;i<callings.length;i++) {
-			 int rank = players_list.indexOf(callings[i]);
-			 
-             players_list.remove(rank);
-			 players_list.add(rank-1,callings[i]);
+		 for(int i=0;i<players.length;i++) {
+			 byRunner.put(players[i], i);
+			 byRank.put(i, players[i]);
 		 }
+		 
+		 for(int i=0;i<callings.length;i++) {
+			 int currentRank = byRunner.get(callings[i]);
+			 String runner = byRank.get(currentRank);
+			 
+			 String frontRunner = byRank.get(currentRank-1);
+			 
+			 //RankMap에서 바꾸기
+			 byRank.replace(currentRank-1, runner);
+			 byRank.replace(currentRank, frontRunner);
+			 
+			 //RunnerMap에서 바꾸기
+			 byRunner.replace(frontRunner, currentRank);
+			 byRunner.replace(runner, currentRank-1);
+		 }
+		 
+		 for(int i=0;i<players.length;i++) {
+			 answer[i] = byRank.get(i);
+		 }
+		 
+		 return answer;
 	 }
 }
