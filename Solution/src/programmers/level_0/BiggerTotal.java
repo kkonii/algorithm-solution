@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level_0;
 
 public class BiggerTotal {
 	public int solution(int a, int b) {

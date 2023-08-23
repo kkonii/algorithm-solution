@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level_0;
 
 public class CommonMultiple {
 	public int solution(int number, int n, int m) {

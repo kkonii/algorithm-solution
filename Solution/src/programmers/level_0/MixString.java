@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level_0;
 
 public class MixString {
     public String solution(String str1, String str2) {

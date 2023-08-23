@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level_0;
 
 public class CodeProcessing {
 	public String solution(String code) {

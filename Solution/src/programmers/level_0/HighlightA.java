@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level_0;
 
 public class HighlightA {
 	 public String solution(String myString) {

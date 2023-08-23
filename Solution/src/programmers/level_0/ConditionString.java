@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level_0;
 
 public class ConditionString {
 	public int solution(String ineq, String eq, int n, int m) {
