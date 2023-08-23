@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level_1;
 
 public class Knights_Weapon {
     public int solution(int number, int limit, int power) {

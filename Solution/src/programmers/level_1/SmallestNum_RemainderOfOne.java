@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level_1;
 
 public class SmallestNum_RemainderOfOne {
     public int solution(int n) {

@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level_1;
 
 public class Babbling_2 {
 	 public int solution(String[] babbling) {
