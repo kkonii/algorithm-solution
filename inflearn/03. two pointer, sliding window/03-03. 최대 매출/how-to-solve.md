@@ -93,7 +93,7 @@ for (int i = 0; i < n - count; i++){
 = **sliding window** 방식
 
 <최종 코드><br>
-MAXIMUM-SALE.java
+[MAXIMUM-SALE.java](https://github.com/kkonii/algorithm-solution/blob/main/inflearn/03.%20two%20pointer%2C%20sliding%20window/03-03.%20%EC%B5%9C%EB%8C%80%20%EB%A7%A4%EC%B6%9C/MAXIMUM-SALE.java)
 
 #### 📍실수하기 쉬운 부분
 - 원소를 한 개씩 빼고 더할 값의 변수
