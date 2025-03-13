@@ -59,7 +59,7 @@ for (int i = 0; i < n - count + 1; i++) {
 ```
 <br>
 
-최종 코드 : [MAXIMUM-SALE.java](https://github.com/kkonii/algorithm-solution/blob/main/inflearn/03.%20two%20pointer%2C%20sliding%20window/03-03.%20%EC%B5%9C%EB%8C%80%20%EB%A7%A4%EC%B6%9C/MAXIMUM-SALE.java)
+최종 코드 : [COMMON-ELEMENTS.java](https://github.com/kkonii/algorithm-solution/blob/main/inflearn/03.%20two%20pointer%2C%20sliding%20window/03-02.%20%EA%B3%B5%ED%86%B5%EC%9B%90%EC%86%8C%20%EA%B5%AC%ED%95%98%EA%B8%B0/COMMON-ELEMENTS.java)
 
 
 #### 📍실수하기 쉬운 부분
